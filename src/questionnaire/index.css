@@ -1,0 +1,25 @@
+.board {
+  display: block;
+  margin: 20px;
+  text-align: left;
+}
+
+.prompt > p {
+  font-size: 2em;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.questionNextBtn {
+  margin-top: 10px;
+}
+
+.board .greeting {
+  display: flex;
+}
+
+.board h1 {
+  font-size: 4em;
+  padding: 20px;
+  margin: auto;
+}
