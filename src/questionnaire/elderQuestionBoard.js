@@ -8,10 +8,17 @@ const { Option } = Select;
 
 // function QuestionBoard() {
 class QuestionBoard extends React.Component {
+  constructor(props) {
+    super(props); // always call the base constructor with props
+    this.state = {view: true}
+  }
 
   render() {
     // process default for tag selector
     const children = [];
+
+    // console.log(this.state)
+
     let skillOptions = ["Fishing", "Dancing", "Musical", "Puzzles", "Crafts", "Bird-watching", "Gardening", "Writing", "Baking"]
     for (let i = 0; i < skillOptions.length; i++) {
       children.push(<Option key={skillOptions[i]}>{skillOptions[i]}</Option>);
@@ -55,7 +62,7 @@ class QuestionBoard extends React.Component {
               <TextArea size="large" placeholder="Tell us a prompt of a cool story.." />
             </div>
 
-            <Button className="questionNextBtn" type="primary" icon={<SendOutlined />}>Start!</Button>
+            <Button className="questionNextBtn" type="primary" icon={<SendOutlined />} onClick={this.props.submitBtn} >Start!</Button>
             </Col>
           </Row>
       </div>
