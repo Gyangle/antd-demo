@@ -8,11 +8,6 @@ const { Option } = Select;
 
 // function QuestionBoard() {
 class QuestionBoard extends React.Component {
-  constructor(props) {
-    super(props); // always call the base constructor with props
-    this.state = {view: true}
-  }
-
   render() {
     // process default for tag selector
     const children = [];

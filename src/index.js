@@ -4,6 +4,12 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// font awesome
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faHospital, faShoppingBasket, faTasks, faPrescriptionBottle } from '@fortawesome/free-solid-svg-icons';
+
+library.add(faHospital, faShoppingBasket, faTasks, faPrescriptionBottle);
+
 ReactDOM.render(
   <React.StrictMode>
     <App />
